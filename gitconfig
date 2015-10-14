@@ -1,0 +1,11 @@
+[user]
+	name = Ivan Milov
+	email = ivan.oyra.milov@gmail.com
+[core]
+	editor = emacs
+	pager = tig
+[color]
+	diff = false
+	ui = false
+	branch = false
+	status = false

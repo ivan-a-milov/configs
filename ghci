@@ -1,0 +1,13 @@
+
+:set -XNoMonomorphismRestriction
+:set -XOverloadedStrings
+
+:set prompt "λ > "
+
+-- :set -Wall
+-- :set -fno-warn-type-defaults
+
+:set +c
+
+:!clear
+
