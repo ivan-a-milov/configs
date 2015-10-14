@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ln -s $( pwd )/bin/reminder.sh /$HOME/_
+
 for cf in $( ls )
 do
     if [[ $cf == "install.sh" ]]
