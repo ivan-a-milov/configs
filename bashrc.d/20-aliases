@@ -1,0 +1,23 @@
+# IDE
+alias storm='/home/oyra/IDE/storm/bin/phpstorm.sh &'
+alias idea='/home/oyra/IDE/idea/bin/idea.sh &'
+
+alias cab-all='cabal clean ; cabal configure && cabal build && cabal install ; cabal clean'
+
+alias rlwrap='RLWRAP_HOME=$HOME/.rlwrap/ rlwrap'
+
+# default options to common commands
+alias cal='cal -3'
+alias emacs='emacs -nw'
+alias mplayer='mplayer -fs -really-quiet'
+alias rm='rm -v'
+
+# languages REPLs
+alias racket='rlwrap racket'
+alias ocaml='rlwrap ocaml'
+alias clisp='clisp -q -on-error abort'
+
+# my tools 
+alias pron='rlwrap ~/proj/pronounce.sh'
+
+

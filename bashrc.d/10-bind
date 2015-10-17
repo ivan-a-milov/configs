@@ -1,0 +1,14 @@
+# copy-paste from 'bind -p' output as root
+bind '"\e\e[C": forward-word'
+bind '"\eOc": forward-word'
+bind '"\e[1;3C": forward-word'
+bind '"\e[1;5C": forward-word'
+bind '"\e[5C": forward-word'
+bind '"\ef": forward-word'
+bind '"\e\e[D": backward-word'
+bind '"\eOd": backward-word'
+bind '"\e[1;3D": backward-word'
+bind '"\e[1;5D": backward-word'
+bind '"\e[5D": backward-word'
+bind '"\eb": backward-word'
+
