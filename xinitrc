@@ -3,5 +3,7 @@
 # TODO
 # xinput disable 10
 
+[ -d ~/..xinitrc.d ] && for f in ~/.xinitrc.d/* ; do source $f ; done
+
 # exec /usr/bin/fvwm
 exec /usr/bin/startkde
