@@ -1,68 +1,23 @@
 #!/bin/bash
 
-EXCLUDE="install.sh bin"
-ARGC=$#
-
-CF_LIST=$( ls )
 DBG=
 
+source functions.sh 
 
-# CF_LIST="test.txt"
-# DBG=qwe
-
-function inst()
-{
-    cf=$1    ; shift 
-    ln=$1    ; shift 
-
-    if [ $DBG ]
-    then
-        echo "[ -e $ln ] && mv $ln $ln.bak"
-        echo "ln -s $cf $ln"
-    else
-        [ -e $ln ] && mv $ln $ln.bak
-        ln -s $cf $ln
-    fi
-}
-
-function uninst()
-{
-    ln=$1    ; shift 
-
-    if [ $DBG ]
-    then
-        echo "unlink $ln"
-        echo "[ -e $ln.bak ] && mv $ln.bak $ln"
-    else
-        unlink $ln
-        [ -e $ln.bak ] && mv $ln.bak $ln
-    fi
-}
-
-function switch()
-{
-    cf=$( pwd )/$1  ; shift
-    ln=/$HOME/$1    ; shift 
-
-    if [[ $ARGC == 0 ]]
-    then
-        inst $cf $ln
-    else
-        uninst $ln
-    fi
-}
-
-for cf in $CF_LIST
+DIR_LIST=$( find files -type d )
+for d in $DIR_LIST
 do
-    if [[ $EXCLUDE =~ (^| )$cf($| ) ]]
-    then
-	continue
-    fi
-
-    ln=.$cf
-    switch $cf $ln
+    dstD=$( echo $d | sed -e "s:files/:../.:" ) 
+    [ -d $dstD ] || mkdir -p $dstD 
 done
 
-switch bin/reminder.sh _
+CF_LIST=$( find files -type f )
+for f in $CF_LIST
+do
+    dstLink=$( echo $f | sed -e "s:files/:../.:")
+    switch $( pwd )/$f $dstLink 
+done
+
+switch $( pwd )/bin/reminder.sh ../_
 
 	  
