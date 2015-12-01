@@ -1,9 +1,5 @@
 PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \W \$\[\033[00m\] '
 
-HISTCONTROL=ignoreboth
-HISTTIMEFORMAT="%F %T: "
-HISTFILE=$HOME/.bash_history.d/${$}
-
 export BC_ENV_ARGS=~/.bcrc
 
 [ -d ~/.bash_completion.d ] && for f in ~/.bash_completion.d/* ;  do source $f ; done
