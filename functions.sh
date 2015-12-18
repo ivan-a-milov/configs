@@ -9,7 +9,7 @@ function inst()
         echo "ln -s $cf $ln"
     else
         [ -e $ln ] && mv $ln $ln.bak
-        ln -s $cf $ln
+        $INSTALL_CMD $cf $ln
     fi
 }
 
