@@ -18,6 +18,4 @@ do
     switch $( pwd )/$f $dstLink 
 done
 
-switch $( pwd )/bin/reminder.sh ../_
-
 	  
