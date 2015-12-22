@@ -4,10 +4,8 @@ max_peers=50
 download_rate=0
 upload_rate=0
 
-directory = /home/oyra/torrents/downloads/
-session = /home/oyra/torrents/session/
-
-# schedule = watch_directory,5,5,load_start=/home/oyra/torrents/links/*.torrent,d.set_directory=/home/oyra/torrents/downloads
+directory = ~/torrents/downloads/
+session = ~/torrents/session/
 
 port_range = 40890-40890
 port_random = no
