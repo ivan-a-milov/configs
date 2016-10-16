@@ -1,6 +1,6 @@
 # IDE
 alias storm="$HOME/IDE/storm/bin/phpstorm.sh &"
-alias idea="HOME/IDE/idea/bin/idea.sh &"
+alias idea="$HOME/IDE/idea/bin/idea.sh &"
 
 alias cab-all='cabal clean ; cabal configure && cabal build && cabal install ; cabal clean'
 
