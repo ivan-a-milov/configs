@@ -1,6 +1,5 @@
 [user]
 	name = Ivan Milov
-	email = ivan.oyra.milov@gmail.com
 [core]
 	editor = emacs
 	pager = tig
