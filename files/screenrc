@@ -1,0 +1,12 @@
+screen 9 /bin/bash --rcfile ~/.bashrc
+screen 8 /bin/bash --rcfile ~/.bashrc
+screen 7 /bin/bash --rcfile ~/.bashrc
+screen 6 /bin/bash --rcfile ~/.bashrc
+screen 5 /bin/bash --rcfile ~/.bashrc
+screen 4 /bin/bash --rcfile ~/.bashrc
+screen 3 /bin/bash --rcfile ~/.bashrc
+screen 2 /bin/bash --rcfile ~/.bashrc
+screen 1 /bin/bash --rcfile ~/.bashrc
+screen 0 /bin/bash --rcfile ~/.bashrc
+
+
